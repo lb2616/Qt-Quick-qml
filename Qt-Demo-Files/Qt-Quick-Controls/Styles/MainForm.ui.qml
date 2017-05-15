@@ -158,7 +158,7 @@ Item {                                                  // QML通用的根元素
 
     property Component sliderStyle: SliderStyle {
         // slider控件所使用的样式代理
-        handle: Rectangle {   // 定义矩形作为滑块
+        /*handle:*/ Rectangle {   // 定义矩形作为滑块
             width: 18
             height: 18
             color: control.pressed ? "darkGray" : "lightGray"

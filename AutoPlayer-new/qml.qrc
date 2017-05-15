@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ButtonImage.qml</file>
+        <file>Media.qml</file>
+        <file>Images/easyicon_net_20160503084006431/1184881.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184882.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184883.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184884.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184885.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184886.png</file>
+        <file>Images/easyicon_net_20160503084006431/1184887.png</file>
+        <file>Images/easyicon_net_20160503084006431/play.png</file>
+        <file>Images/easyicon_net_20160503084006431/www.easyicon.net.txt</file>
+        <file>Images/add.png</file>
+        <file>Images/back.png</file>
+        <file>Images/KPlayer.png</file>
+        <file>Images/NoSomoking.png</file>
+        <file>Images/OTIS.png</file>
+        <file>Images/pass.png</file>
+        <file>Images/pause.png</file>
+        <file>Images/play.png</file>
+        <file>Images/stop.png</file>
+        <file>Images/voice.png</file>
+    </qresource>
+</RCC>
