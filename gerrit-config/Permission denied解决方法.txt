@@ -1,0 +1,114 @@
+http://blog.sina.com.cn/s/blog_4d4bc1110101dbxs.html
+
+
+libo1@libo1 MINGW64 ~
+$
+
+
+libo1@libo1 MINGW64 ~
+$
+
+libo1@libo1 MINGW64 ~
+$ git clone ssh://libo1@10.200.13.100:29418/android-kk4.4.3_2.0.0-ga
+Cloning into 'android-kk4.4.3_2.0.0-ga'...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+libo1@libo1 MINGW64 ~
+$ git clone ssh://libo1@10.200.13.100:29418/android-kk4.4.3_2.0.0-ga && scp -p -P 29418 libo1@10.200.13.100:hooks/commit-msg android-kk4.4.3_2.0.0-ga/.git/hooks/
+Cloning into 'android-kk4.4.3_2.0.0-ga'...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+libo1@libo1 MINGW64 ~
+$ ??ssh -T git@github.com
+bash: $'\302\226\302\226ssh': command not found
+
+libo1@libo1 MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.255.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
+Permission denied (publickey).
+
+libo1@libo1 MINGW64 ~
+$ ??git clone ssh://libo1@10.200.13.100:29418/android-kk4.4.3_2.0.0-ga && scp -p -P 29418 libo1@10.200.13.100:hooks/commit-msg android-kk4.4.3_2.0.0-ga/.git/hooks/
+Cloning into 'android-kk4.4.3_2.0.0-ga'...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+libo1@libo1 MINGW64 ~
+$
+
+
+libo1@libo1 MINGW64 ~
+$
+
+libo1@libo1 MINGW64 ~
+$ ssh-a
+ssh-add.exe    ssh-agent.exe
+
+libo1@libo1 MINGW64 ~
+$ ssh-a
+ssh-add.exe    ssh-agent.exe
+
+libo1@libo1 MINGW64 ~
+$ ssh-add libo1.pub
+Could not open a connection to your authentication agent.
+
+libo1@libo1 MINGW64 ~
+$ ssh-agent bash.
+bash.: No such file or directory
+
+libo1@libo1 MINGW64 ~
+$ ssh-agent bash
+
+libo1@libo1 MINGW64 ~
+$ ssh-add
+Identity added: /c/Users/yonghao/.ssh/id_rsa (/c/Users/yonghao/.ssh/id_rsa)
+
+libo1@libo1 MINGW64 ~
+$ ssh-add ~/.ssh/libo1.pub
+Enter passphrase for /c/Users/yonghao/.ssh/libo1.pub:
+
+libo1@libo1 MINGW64 ~
+$ git clone ssh://libo1@10.200.13.100:29418/android-kk4.4.3_2.0.0-ga
+Cloning into 'android-kk4.4.3_2.0.0-ga'...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+libo1@libo1 MINGW64 ~
+$ ssh-add ~/.ssh/libo1
+libo1      libo1.pub
+
+libo1@libo1 MINGW64 ~
+$ ssh-add ~/.ssh/libo1
+libo1      libo1.pub
+
+libo1@libo1 MINGW64 ~
+$ ssh-add ~/.ssh/libo1
+Identity added: /c/Users/yonghao/.ssh/libo1 (/c/Users/yonghao/.ssh/libo1)
+
+libo1@libo1 MINGW64 ~
+$ git clone ssh://libo1@10.200.13.100:29418/android-kk4.4.3_2.0.0-ga
+Cloning into 'android-kk4.4.3_2.0.0-ga'...
+remote: Counting objects: 2, done
+remote: Finding sources: 100% (2/2)
+remote: Total 2 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (2/2), done.
+
+libo1@libo1 MINGW64 ~
+$
