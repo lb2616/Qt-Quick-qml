@@ -7,26 +7,16 @@ import QtQuick.Dialogs 1.2
 import QtQuick.Window 2.0
 ApplicationWindow{
     id:kPlayer
-    width: 1024
-    height: 650
+    width: Screen.width /*1024*/
+    height: Screen.height /*768*/
     visible: true
-    title: player.source /*getVedioName(fd.fileUrl.toString())*/
-    //获取影音名称
-/*    function getVedioName(str)
-    {
-        var url=fd.fileUrl.toString();
-        var strList=new Array();
-        strList=url.split("/");
-        var name=strList[strList.length-1];
-        return name;
-
-    }*/
-
+//    flags: Qt.FramelessWindowHint  //隐藏菜单栏
+//    flags: Qt.Window | 0x00800000 | Qt.FramelessWindowHint
     Column{
         Rectangle {
             id: shang
             color:"white"
-            width: 1024
+            width: kPlayer.width
             height: 80
             Row {
                 width: parent.width
@@ -44,7 +34,7 @@ ApplicationWindow{
                 Rectangle {
                     id: blackRect
                     x: picRect.width
-                    width:shang.width - picRect.width - bigRect.width-4
+                    width:shang.width - picRect.width - bigRect.width - 4
                     height: parent.height
                 }
 
@@ -77,7 +67,7 @@ ApplicationWindow{
             id:screen
             color:"black"
             width:kPlayer.width - bigRect.width
-            height: kPlayer.height - 80  //130
+            height: kPlayer.height - 130  //130
             Image{
                 id:img
                 source: "./Images/KPlayer.png"
@@ -86,7 +76,7 @@ ApplicationWindow{
 
             MediaPlayer{
                 id:player
-                source: "file:///home/devin/Desktop/Qt-Quick-qml/AutoPlayer-new/Test1.mp4"
+                source: "file:///home/devin/Desktop/AutoPlayer-new/videos/Test2.mp4"
                 autoLoad: false
                 autoPlay: true    // 当AutoPlay 设置为true的时候，如果视频文件存在，就会直接播放视频
                 volume: 0.4
@@ -103,7 +93,7 @@ ApplicationWindow{
                     x: screen.width
                     y: shang.height
                     width: kPlayer.width - screen.width  //宽度
-                    height: (kPlayer.height - 80/*130*/) / 2
+                    height: (kPlayer.height - 130/*130*/) / 2
                     Text {
                         text: "39"
                         anchors.centerIn: parent
@@ -117,18 +107,13 @@ ApplicationWindow{
                         x: screen.width
                         y: lcdnum.height  // y坐标就是Lcdnum的高度
                         width: kPlayer.width - screen.width
-                        height: (kPlayer.height - 80 /*130 */) / 2
+                        height: (kPlayer.height - 130 /*130 */) / 2
                         source: "./Images/NoSomoking.png"
                     }
                 }
             }
- /*           MouseArea {
-                anchors.fill: parent
-                onPressed: {
-                    player.play()
-                }
-            }*/
         }
+        Rollingtext { }
     }
 }
 
