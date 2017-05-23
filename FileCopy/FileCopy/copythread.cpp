@@ -72,7 +72,7 @@ void CopyThread::run()
 
     for(i=0;i<fileList.count();++i)
     {
-        fileName = fileList.at(i);
+        fileName = fileList.at(i);qDebug()<<"i = "<< i<<'\n';
         emit copyStationSig(COPY_FILE_NAME,fileName.split("/").last());
         if(ERROR_MEM_FULL==fileCopy(fileName))
         {
@@ -84,7 +84,7 @@ void CopyThread::run()
 
         if(bStop) break;
     }
-
+    qDebug()<< "bstop = "<< bStop << '\n';
     emit copyStationSig(COPY_STOP,fileName);
 }
 
@@ -122,7 +122,7 @@ int CopyThread::fileCopy(QString fileName)
 
     while(!srcFile.atEnd())
     {
-        count++;
+        count++;qDebug()<<"count = "<< count<<'\n';
         byteArray=srcFile.read(1024);
         desFile.write(byteArray);
 
